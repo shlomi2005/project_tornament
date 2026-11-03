@@ -1,3 +1,4 @@
+
 def name_validation(name) -> str:
     if not (name.strip()):
         return None
