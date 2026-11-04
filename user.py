@@ -1,5 +1,5 @@
-
 from client import all_check
+from functions import display_all, teams
 
 
 def get_team():
@@ -31,7 +31,9 @@ Choose an option:
 
        """))
         if pick == 1:
-            return get_team()
+            print(get_team())
+        if pick == 2:
+            display_all(teams)
 
 
-print(mune())
+mune()

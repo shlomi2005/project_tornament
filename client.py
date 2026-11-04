@@ -47,11 +47,11 @@ def id_not_duplicate(numbers) -> int:
     for team in teams:
         if team["id"] == numbers:
             return None
-        return True
+    return True
 
 
 def name_not_duplicate(name) -> str:
     for team in teams:
         if team["name"].upper() == name.upper:
             return None
-        return True
+    return True
