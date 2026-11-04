@@ -1,11 +1,12 @@
 from validation import all_check
 from db import teams
 from display import display_all
+from add_geams import input_
 
 
 def get_team():
 
-    team_id = (input("enter a id for team :"))
+    team_id = int(input("enter a id for team :"))
     team_name = input("enter a name for team :")
     return all_check(team_id, team_name)
 
@@ -33,7 +34,7 @@ Choose an option:
         if pick == 2:
             display_all()
         if pick == 3:
-            pass
+            input_()
         if pick == 4:
             pass
         if pick == 5:
