@@ -1,5 +1,6 @@
-from client import all_check
-from functions import display_all, teams
+from validation import all_check
+from db import teams
+from display import display_all
 
 
 def get_team():
@@ -7,9 +8,6 @@ def get_team():
     team_id = (input("enter a id for team :"))
     team_name = input("enter a name for team :")
     return all_check(team_id, team_name)
-
-
-# print(get_team())
 
 
 def mune():
@@ -33,7 +31,26 @@ Choose an option:
         if pick == 1:
             print(get_team())
         if pick == 2:
-            display_all(teams)
+            display_all()
+        if pick == 3:
+            pass
+        if pick == 4:
+            pass
+        if pick == 5:
+            pass
+        if pick == 6:
+            pass
+        if pick == 7:
+            pass
+        if pick == 8:
+            pass
+        if pick == 9:
+            pass
+        if pick == 10:
+            pass
+        if pick == 0:
+            print("good bye")
+            break
 
 
 mune()

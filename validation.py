@@ -1,4 +1,4 @@
-from functions import teams, add_team
+from db import teams, add_team
 
 
 def all_check(id, name):
