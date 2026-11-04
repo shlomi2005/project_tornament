@@ -1,17 +1,20 @@
 from validation import all_check
-from db import teams
+# from db import teams
 from display import display_all
 from add_geams import input_
+from rating import tavla, sort_teams, ranking, top_team
+from goools_top import top_goals
+from success_rates import success
+from team_losses import filter_of_team
 
 
 def get_team():
-
     team_id = int(input("enter a id for team :"))
     team_name = input("enter a name for team :")
     return all_check(team_id, team_name)
 
 
-def mune():
+def menu():
     print("======tornament manager======")
     while True:
         pick = int(input("""
@@ -36,15 +39,15 @@ Choose an option:
         if pick == 3:
             input_()
         if pick == 4:
-            pass
+            print(tavla(sort_teams()))
         if pick == 5:
-            pass
+            print(top_team(sort_teams()))
         if pick == 6:
-            pass
+            top_goals()
         if pick == 7:
-            pass
+            success()
         if pick == 8:
-            pass
+            filter_of_team()
         if pick == 9:
             pass
         if pick == 10:
@@ -54,4 +57,4 @@ Choose an option:
             break
 
 
-mune()
+menu()
